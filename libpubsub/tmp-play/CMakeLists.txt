@@ -8,23 +8,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 
-set(PROJECT_SOURCES
-    main.cpp
-)
-
 set(SRC_LIST
-    model/bleservicepublisherchangerequest.cpp
-    model/bleservice-publisher.cpp
+    ../tmp-model/bleservicepublisherchangerequest.cpp
+    ../tmp-model/bleservice-publisher.cpp
     main.cpp
 )
 
 set(HEADER_LIST
-    model/bleservicepublisherchangerequest.h
-    model/bleservice-publisher.h
-    model/ibleservice.h
-    model/ibleservicechangerequest.h
-    model/ibleservice-subscriber.h
-    model/ibleservice-publisher.h
+    ../tmp-model/bleservicepublisherchangerequest.h
+    ../tmp-model/bleservice-publisher.h
+    ../tmp-model/ibleservice.h
+    ../tmp-model/ibleservicechangerequest.h
+    ../tmp-model/ibleservice-subscriber.h
+    ../tmp-model/ibleservice-publisher.h
 )
 
 add_executable(${PROJECT_NAME}

@@ -2,8 +2,8 @@
 
 #include <libpubsub/redis/publisherfactory.h>
 
-#include "model/bleservice-publisher.h"
-#include "model/bleservicepublisherchangerequest.h"
+#include "../tmp-model/bleservice-publisher.h"
+#include "../tmp-model/bleservicepublisherchangerequest.h"
 
 using namespace smartpower;
 
@@ -16,5 +16,5 @@ int main(int argc, char *argv[])
 
     publisher.setChanges(bleservice::publisher::BLEServicePublisherChangeRequest()
                              .setPower(250.f)
-                             .setCadence(120.f));
+                             .setCadence(123.f));
 }
